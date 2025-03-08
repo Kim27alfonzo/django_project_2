@@ -1,11 +1,32 @@
 
-{% extends "includes/navbar.html" %}
+{% extends 'includes/navbar.html' %}
 
 {% block content %}
 
-<h1>Esta es mi website</h1>
-<h2>Sea bienvenidos</h2>
+{% load static %}
 
-<p>Mi pagina se trata sobre animales</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Website</title>
+    <link rel="stylesheet" href="{% static 'home-styles.css' %}"> <!-- Asegúrate de cargar el archivo CSS -->
+</head>
+<body>
+
+    
+
+    <!-- Contenido principal -->
+    <div class="content">
+        
+        <h1>Esta es mi website</h1>
+        <h2>Sea bienvenidos</h2>
+        <p>Mi pagina se trata sobre animales</p>
+        
+    </div>
+
+</body>
+</html>
 
 {% endblock %}

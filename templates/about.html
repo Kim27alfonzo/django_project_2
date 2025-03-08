@@ -1,11 +1,32 @@
 
-{% extends "includes/navbar.html" %}
+{% extends 'includes/navbar.html' %}
 
 {% block content %}
 
-<h1>Acerca de</h1>
-<h2>Mi website</h2>
+{% load static %}
 
-<p>Esta pagina esta dedicada a informar sobre animales domesticos a traves de documentales</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Mi Website</title>
+    <link rel="stylesheet" href="{% static 'about-styles.css' %}"> <!-- Asegúrate de cargar el archivo CSS -->
+</head>
+<body>
+
+    
+
+    <!-- Contenido principal -->
+    <div class="content">
+        
+        <h1>Acerca de</h1>
+        <h2>Mi website</h2>
+        <p>Esta pagina esta dedicada a informar sobre animales domesticos a traves de documentales</p>
+        
+    </div>
+
+</body>
+</html>
 
 {% endblock %}
